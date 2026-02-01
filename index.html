@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faltam 5 dias</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wesley & Gioh</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
+<body>
 
-    <!-- Explosão -->
-    <div id="flash"></div>
+  <!-- INTRO -->
+  <section id="intro" class="screen active">
+    <h1>Prepare-se</h1>
+    <p>Algo inesquecível está chegando</p>
+    <button id="start">REVELAR</button>
+  </section>
 
-    <div class="container">
-        <h1>O amor está prestes a viver um novo capítulo…</h1>
+  <!-- CONTAGEM -->
+  <section id="count" class="screen">
+    <div id="number">5</div>
+  </section>
 
-        <div id="reveal">
-            <p class="loading">A contagem vai começar</p>
-        </div>
+  <!-- FINAL -->
+  <section id="final" class="screen">
+    <h2 class="dias">FALTAM 5 DIAS</h2>
+    <h3 class="casamento">Casamento</h3>
+    <h4 class="nomes">Wesley & Gioh</h4>
+  </section>
 
-        <button onclick="revelar()">Revelar</button>
-    </div>
+  <canvas id="hearts"></canvas>
 
-    <audio id="sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_7e0b1b9b0a.mp3"></audio>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
